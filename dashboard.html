@@ -55,32 +55,83 @@
             </div>
         </div>
         <div class="middle-container">
-            <div class="sales-summary-container">
-                <p>Sales Summary</p>
-                <div class="summary-container">
-                    <div class="summary-box">
-                        <div class="icon-div" id="bg1"><i class="fa-solid fa-chart-line"></i></div>
-                        <div class="text-div"><p id="pnum">143.3k</p><p id="ptext">Today's Sale</p></div>
+            <div class="dashboard-content">
+                <p id="tab-heading">Overview</p>
+                <div class="layer1">
+                    <div class="big-box">
+                        <div class="card-icon"><i class="fa-solid fa-calendar-days" id="t1"></i></div>
+                        <p class="layer1-big-value">$250,423</p>
+                        <p class="layer1-small-value">Yearly Total Sales</p>
+
                     </div>
-                    <div class="summary-box">
-                        <div class="icon-div" id="bg2"><i class="fa-solid fa-calendar-days"></i></div>
-                        <div class="text-div"><p id="pnum">$250,423</p><p id="ptext">Yearly Total Sales</p></div>
+                    <div class="big-box">
+                        <div class="card-icon"><i class="fa-regular fa-sun"></i></div>
+                        <p class="layer1-big-value">$2,009</p>
+                        <p class="layer1-small-value">Today's Sales</p>
                     </div>
-                    <div class="summary-box">
-                        <div class="icon-div" id="bg3"><i class="fa-solid fa-dollar-sign"></i></i></div>
-                        <div class="text-div"><p id="pnum">$68.9k</p><p id="ptext">Net Income</p></div>
+                    <div class="big-box">
+                        <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <p class="layer1-big-value">496</p>
+                        <p class="layer1-small-value">Total Orders Today</p>
                     </div>
-                    <div class="summary-box">
-                        <div class="icon-div" id="bg4"><i class="fa-solid fa-bag-shopping"></i></i></div>
-                        <div class="text-div"><p id="pnum">343</p><p id="ptext">Products</p></div>
+                    <div class="big-box">
+                        <div class="card-icon"><i class="fa-solid fa-magnifying-glass-chart" id="t1"></i></div>
+                        <p class="layer1-big-value">$45</p>
+                        <p class="layer1-small-value">Avg. Daily Order Value</p>
                     </div>
                 </div>
+                <div class="layer2">
+                    <div class="small-box-container">
+                        <div class="small-box">
+                            <div class="small-box-details">
+                                <div class="icon-div" id="bg1"><i class="fa-regular fa-calendar-days"></i></div>
+                                <div class="text-div"><p id="pnum">$20,913</p><p id="ptext">Current Month Sales</p></div>    
+                            </div>
+                        </div>
+                        <div class="small-box">
+                            <div class="small-box-details">
+                                <div class="icon-div" id="bg2"><i class="fa-solid fa-q"></i></div>
+                                <div class="text-div"><p id="pnum">$62,608</p><p id="ptext">Current Quarter Sales</p></div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-box-container">
+                        <div class="small-box">
+                            <div class="small-box-details">
+                                <div class="icon-div" id="bg2"><i class="fa-solid fa-bag-shopping"></i></div>
+                                <div class="text-div"><p id="pnum">343</p><p id="ptext">Available Products</p></div>    
+                            </div>
+                        </div>
+                        <div class="small-box">
+                            <div class="small-box-details">
+                                <div class="icon-div" id="bg1"><i class="fa-solid fa-circle-exclamation"></i></div>
+                                <div class="text-div"><p id="pnum">11</p><p id="ptext">Low Stock Products</p></div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-card">
+                        <div class="item-img"><img src="./assets/dashboard/Item Image.svg" alt="Top Selling Product Image"></div>
+                        <div class="product-text">
+                            <p id="header-text">Today’s Top <br>Selling Product<p>
+                            <p>Quilted Northern Ultra Plush Toilet Paper, 6 Mega Rolls = 24 Regular Rolls, 3X Thicker*, 3 Ply Soft Toilet Tissue</p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-            <div class="stock-report">
-                <img src="assets/dashboard/Stock Report.svg" alt="Stock-Report.svg">
-            </div>
-            <div class="sales-order">
-                <img src="assets/dashboard/Sales Order.svg" alt="Sales-Order.svg">
+            <div class="report-container">
+                <div class="stock-record">
+                    <img src="./assets/dashboard/Stock Record.svg" alt="stock-record.svg">
+                </div>
+                <div class="sales-order">
+                    <img src="./assets/dashboard/Sales Order 7 days.svg" alt="sales-order.svg">
+                </div>
+                <div class="orders-per-category">
+                    <img src="./assets/dashboard/Orders per category.svg" alt="orders-per-category.svg">
+                </div>
+                <div class="inventory-turnover-rate">
+                    <img src="./assets/dashboard/Inventory Turnover Rate.svg" alt="inventory-turnover-rate.svg">
+                </div>
             </div>
         </div>
 
@@ -115,15 +166,6 @@
                     </div>
                     <p>Export</p><br>
                 </div>
-                <h4>Fast Moving Items</h4>
-                <p class="item-text">Macbook Pro</p>
-                <p class="item-text">Iphone 14 Pro</p>
-                <p class="item-text">Zoom75</p>
-                <p class="item-text">Airpods Pro</p>
-                <p class="item-text">Samsung Galaxy Fold</p>
-                <p class="item-text">Samsung Odyssey</p>
-                <p class="item-text">Logitech Superlight</p>
-                <p class="item-text">Amkette Optimus</p>
             </div>
         </div>
     </main>
@@ -153,5 +195,6 @@
             </div>
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
