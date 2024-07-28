@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformer - Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="assets\signin\title-icon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/dashboard/Header Logo.svg" alt="HeaderLogo">
+        </div>
+        <div class="search-container">
+            <label for="search"><div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search" id="search">
+            </div></label>
+            <div class="settings"><i class="fa-solid fa-filter"></i></div>
+        </div>
+    </header>
+    <main>
+        <div class="general-container">
+            <h5>GENERAL</h5>
+            <div class="general-tabs">
+                <i class="fa-solid fa-grip" id="i01"></i>
+                <p id="gen1">Dashboard</p>
+            </div>
+            <div class="general-tabs">
+                <i class="fa-solid fa-warehouse"></i>
+                <p>Inventory</p>
+            </div>
+            <div class="general-tabs">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p id="gen3">Sales Orders</p>
+            </div>
+            <div class="general-tabs">
+                <i class="fa-solid fa-truck"></i>
+                <p>Suppliers</p>
+            </div>
+            <div class="general-tabs">
+                <i class="fa-solid fa-receipt" id="i05"></i>
+                <p id="gen5">Reports</p>
+            </div>
+            <h5>SUPPORT</h5>
+            <div class="general-tabs">
+                <i class="fa-solid fa-circle-info"></i>
+                <p id="gen5">Help</p>
+            </div>
+            <div class="general-tabs">
+                <i class="fa-solid fa-gear"></i>
+                <p id="gen5">Settings</p>
+            </div>
+        </div>
+        <div class="middle-container">
+            <div class="sales-summary-container">
+                <p>Sales Summary</p>
+                <div class="summary-container">
+                    <div class="summary-box">
+                        <div class="icon-div" id="bg1"><i class="fa-solid fa-chart-line"></i></div>
+                        <div class="text-div"><p id="pnum">143.3k</p><p id="ptext">Today's Sale</p></div>
+                    </div>
+                    <div class="summary-box">
+                        <div class="icon-div" id="bg2"><i class="fa-solid fa-calendar-days"></i></div>
+                        <div class="text-div"><p id="pnum">$250,423</p><p id="ptext">Yearly Total Sales</p></div>
+                    </div>
+                    <div class="summary-box">
+                        <div class="icon-div" id="bg3"><i class="fa-solid fa-dollar-sign"></i></i></div>
+                        <div class="text-div"><p id="pnum">$68.9k</p><p id="ptext">Net Income</p></div>
+                    </div>
+                    <div class="summary-box">
+                        <div class="icon-div" id="bg4"><i class="fa-solid fa-bag-shopping"></i></i></div>
+                        <div class="text-div"><p id="pnum">343</p><p id="ptext">Products</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="stock-report">
+                <img src="assets/dashboard/Stock Report.svg" alt="Stock-Report.svg">
+            </div>
+            <div class="sales-order">
+                <img src="assets/dashboard/Sales Order.svg" alt="Sales-Order.svg">
+            </div>
+        </div>
+
+        <div class="profile-container">
+            <div class="profile-tab">
+                <div class="profile">
+                    <div class="user-icon-div"><i class="fa-regular fa-user"></i></div>
+                    <div class="user-details">
+                        <p class="name">Ram Das</p>
+                        <p class="role">Admin</p>
+                    </div>
+                </div>
+                <div class="profile-menu"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            </div>
+            <div class="QA-div">
+                <h5>Quick Actions</h5>
+                <div class="QA-tabs">
+                    <i class="fa-solid fa-file-circle-plus"></i>
+                    <p>Create Order</p>
+                </div>
+                <div class="QA-tabs">
+                    <i class="fa-solid fa-box" id="fabox"></i>
+                    <p>Add Product</p>
+                </div>
+                <div class="QA-tabs">
+                    <i class="fa-solid fa-truck"></i>
+                    <p>Add Supplier</p>
+                </div>
+                <div class="QA-tabs">
+                    <div class="export">
+                        <i class="fa-solid fa-arrow-up-long" id="export-icon"></i>
+                    </div>
+                    <p>Export</p><br>
+                </div>
+                <h4>Fast Moving Items</h4>
+                <p class="item-text">Macbook Pro</p>
+                <p class="item-text">Iphone 14 Pro</p>
+                <p class="item-text">Zoom75</p>
+                <p class="item-text">Airpods Pro</p>
+                <p class="item-text">Samsung Galaxy Fold</p>
+                <p class="item-text">Samsung Odyssey</p>
+                <p class="item-text">Logitech Superlight</p>
+                <p class="item-text">Amkette Optimus</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="main-div">
+            <div class="child-div1">
+                <div class="footer-logo"><img src="assets/signin/title-icon.svg" alt="Company-Logo"></div>
+                <div class="child1-text">
+                    <p>Dashboard</p>
+                    <p>Sales</p>
+                    <p>Banking</p>
+                    <p>Records</p>
+                    <p>Contact Us</p>
+                </div>
+            </div>
+            <div class="child-div2">
+                <div class="slogan"><p>Cultivating Efficiency, Tracking Excellence — <br>Your Trusted Inventory Management Partner</p></div>
+                <div class="contact-icons"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i></div>
+            </div>
+            <div class="child-div3">
+                <hr>
+            </div>
+            <div class="child-div4">
+                <p class="hyperlink">Privacy Policy</p>
+                <p>© 2023 Clueless Technologies, Inc.</p>
+                <p class="hyperlink">Terms & Conditions</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
