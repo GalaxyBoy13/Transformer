@@ -2,6 +2,8 @@ const tabs=document.querySelectorAll(".general-tabs");
 const dashboardContainer=document.querySelector(".dashboard-content");
 const reportContainer=document.querySelector(".report-container");
 
+dashboardContainer.classList.add('active');
+
 tabs.forEach((tab, index)=>{
     tab.addEventListener('click',()=>{
         tabs.forEach(tab=>{tab.classList.remove('active')});
